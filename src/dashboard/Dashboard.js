@@ -13,15 +13,15 @@ class Dashboard extends React.Component {
     const { closed, locked } = this.state;
 
     return (
-      <>
-        <Display locked={locked} closed={closed} />
-        <Controls
-          locked={locked}
-          closed={closed}
-          toggleLocked={this.toggleLocked}
-          toggleClosed={this.toggleClosed}
-        />
-      </>
+        <>
+          <Display locked={locked} closed={closed} />
+          <Controls
+              locked={locked}
+              closed={closed}
+              toggleLocked={this.toggleLocked}
+              toggleClosed={this.toggleClosed}
+          />
+        </>
     );
   }
 
